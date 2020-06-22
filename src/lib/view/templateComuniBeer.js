@@ -182,6 +182,7 @@ db.collection("resenas").orderBy("fechaPublicacion", "desc").onSnapshot((querySn
             <p class="reviewLabel" id="tipo"> <strong> ${doc.data().tipoCerveza}</strong> </p>
             <p class="reviewLabel" id="pais"> <strong> ${doc.data().paisCerveza}</strong> </p>
           </div>
+          <div>
         </div>
           <div id="reviewRow">
           <p id="res">${doc.data().resenaCerveza}</p>    
