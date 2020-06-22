@@ -23,6 +23,11 @@ body {
   justify-content: center;
 }
 
+#error {
+  margin: 10% 10% 10% 25%;
+  width: 50%;
+}
+
 .introTemplate {
   display: flex;
   width: 800px;
@@ -563,6 +568,83 @@ h2 {
   width: 30%;
 }
 
+/* Entrada Blog */
+
+.submitted {
+  font-style: italic;
+  font-size: 0.875em;
+  text-align: center;
+  margin-top: 3em;
+}
+
+.blogEntryText {
+  margin: 0 0 1em;
+}
+
+.blogEntryText:first-of-type {
+  font-size: 1.25em;
+  font-weight: 300;
+  margin-top: 2em;
+}
+
+.blogEntryTextSub {
+  font-family: "Titillium Web", sans-serif;
+  color: #425363;
+  font-weight: 300;
+}
+
+.titleEntryText {
+  text-align: center;
+  font-size: 4em;
+  font-weight: 100;
+  font-family: "Titillium Web", sans-serif;
+  color: #425363;
+  font-weight: 300;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
+    url(http://imgfz.com/i/WuPbUyM.jpeg);
+  background-size: cover;
+  color: #fff;
+  margin: 0;
+  padding: 4em 0 0.25em;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.75);
+}
+
+.blogEntryTextSub {
+  font-size: 2em;
+  margin: 1em 0 0;
+}
+
+.containerBlogEntry {
+  margin: 2em auto;
+  width: 98%;
+  max-width: 34em;
+}
+
+q {
+  color: #00a5b5;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  font-weight: 300;
+  line-height: 1.1;
+}
+
+q.align-right {
+  float: right;
+  width: 50%;
+  margin: 1em -25% 1em 1.5em;
+}
+
+q.align-left {
+  float: left;
+  width: 50%;
+  margin: 1em 1.5em 1em -25%;
+}
+
+a {
+  color: #00a5b5;
+}
+
+/* Fin Entrada Blog */
 /*Sección cervecerías chilenas*/
 
 .webbeer {
@@ -1229,6 +1311,12 @@ color: #9a9a9a;
 /* Responsivo */
 /* for-phone-only */
 @media (max-width: 599px) {
+      ul:before {
+      content: "\279C";
+      margin: 0px 5px 0px 13px;
+      color: #8a8a8a;
+    }
+
     #titleHome{
       font-size: 40px;
     }
@@ -1243,4 +1331,10 @@ color: #9a9a9a;
       background-size: cover;
       background-position: -100px 0;
     }
+
+    #error {
+      margin: 5% 5% 5% 1%;
+      width: 100%;
+    }
+    
   }

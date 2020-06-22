@@ -44,7 +44,6 @@ A través de esta atractiva página web podrán reseñar, comentar y saber donde
 ### Prototipo de baja calidad
 ![Prototipo de baja calidad](http://imgfz.com/i/6nHj2wh.png)
 ### Colores 
-<Agregar Imagen paleta de colores (Elegidos y Fijos) >
 Nuestra paleta de colores fue elegida basada en las cervezas de tipo *lager* (específicamente 'pale lager') la cual se caracteriza por tener un color dorado el cual se suele asociar en general a todo tipo de cervezas debido al alto consumo y producción de este tipo de bebidas fermentadas que la vuelva una de las más comunes y consumidas en el mundo; así  nuestra web se siente cercana y se asocia a esta identidad cervecera.
 
 Se juega con la paleta de amarillo/dorados dando más consistencia visual.
@@ -75,8 +74,5 @@ Como amante de la cerveza quiero poder **compartir con otros** en una web social
  - Reseñas de Cervezas y/o Bares 
  - Comentarios en  publicaciones
 
-### Testeos en usuarios
-<Introducir texto sobre testeos aquí>
-
 ## Final
-Puedes visualizar el resultado final de nuestra web y funcionamiento al hacer click **aquí**
+Puedes visualizar el resultado final de nuestra web y funcionamiento al hacer click [Aquí](https://mariajosegarrido.github.io/SCL013-social-network/src/index.html#home)

@@ -19,11 +19,11 @@ export const blog = () => {
       </article>
 
       <article class="card article-card">
-        <img class="imgEntrance" src="https://images.unsplash.com/photo-1584225064536-d0fbc0a10f18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80">
+        <img class="imgEntrance" src="http://imgfz.com/i/WuPbUyM.jpeg">
         <div class="article-info">
-          <a href="#">
+          <a href="#entradaBlog2">
             <div>
-              <h2 class="article-title">Aprende a hacer tu primera cerveza</h2>
+              <h2 class="article-title">Como hacer tu propia Cerveza artesanal</h2>
             </div>
             <p class="byline">Escrito por Maria Jose G.</p>
           </a>

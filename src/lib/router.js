@@ -9,6 +9,7 @@ import { abastecete } from './view/templateAbastecete.js';
 import { cerveceriasChilenas } from './view/templateCerveceriaschilenas.js';
 import { comuniBeer } from './view/templateComuniBeer.js';
 import { contacto } from './view/templateContacto.js';
+import { entradaBlog2 } from './view/templateEntradaBlog2.js';
 
 export const changeRouter = (hash) => {
     if (hash === '#identificacion'){
@@ -31,7 +32,9 @@ export const changeRouter = (hash) => {
         return showTemplate(hash)
     } else if (hash === '#contacto'){
         return showTemplate(hash)
-    }else {
+    } else if (hash === '#entradaBlog2'){
+        return showTemplate(hash)
+    } else {
         return showTemplate(hash)
     }
 }
@@ -74,8 +77,11 @@ const showTemplate = (hash) => {
         case '#contacto':
             containerRoot.appendChild(contacto());
             break;
+        case '#entradaBlog2':
+            containerRoot.appendChild(entradaBlog2());
+            break;
         default:
-            containerRoot.innerHTML = `<h2>No existe</h2>`
+            containerRoot.innerHTML = `<img id="error" src="./img/error404.png">`
 
     }
 }
