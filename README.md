@@ -1,6 +1,5 @@
 # SocialBeer
-![Logo SocialBeer](http://imgfz.com/i/bGv4odX.png
- =200x)
+![Logo SocialBeer](http://imgfz.com/i/bGv4odX.png)
 
   
   

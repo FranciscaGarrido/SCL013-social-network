@@ -35,7 +35,7 @@ export const comuniBeer = () => {
           <label for="file-upload" class="btnImageUnpload">
             <i class="fas fa-camera"></i>
           </label>
-          <input id="file-upload" type="file" style='display: none;' accept="image/x.png, image/jpeg"/>
+          <input id="file-upload" type="file" style='display: none;'/>
           <div id="info"></div> 
           <button type="submit" class='btnWeb' id='btnReview'>¡Reseñar!</button>  
         </div>
@@ -109,6 +109,7 @@ export const comuniBeer = () => {
     </div>
   
   </footer>
+
   `
   divcomuniBeer.innerHTML = viewcomuniBeer;
   const btnReviewBeer = divcomuniBeer.querySelector('#btnReview');
@@ -171,16 +172,32 @@ db.collection("resenas").orderBy("fechaPublicacion", "desc").onSnapshot((querySn
         </div>
         <div id="textReviewPost">
           <div id="labelColumn">
-            <p class="labelText"> MARCA: </p>
-            <p class="labelText"> Nombre: </p>
-            <p class="labelText"> TIPO: </p>
-            <p class="labelText"> PAÍS: </p>
+            <div class="tagBeer">
+              <p class="labelText"> MARCA: </p>
+            </div>
+            <div class="tagBeer">
+              <p class="labelText"> NOMBRE: </p>
+            </div>
+            <div class="tagBeer">
+              <p class="labelText"> TIPO: </p>
+            </div>
+            <div class="tagBeer">
+              <p class="labelText"> PAÍS: </p>
+            </div>
           </div>
           <div id="inputEntranceColumn">
-            <p class="reviewLabel" id="marca"> <strong> ${doc.data().marcaCerveza} </strong> </p>
-            <p class="reviewLabel" id="nombre"> <strong> ${doc.data().nombreCerveza} </strong> </p>
-            <p class="reviewLabel" id="tipo"> <strong> ${doc.data().tipoCerveza}</strong> </p>
-            <p class="reviewLabel" id="pais"> <strong> ${doc.data().paisCerveza}</strong> </p>
+            <div class="tagBeerReview">
+              <p class="reviewLabel" id="marca"> <strong> ${doc.data().marcaCerveza} </strong> </p>
+              </div>
+              <div class="tagBeerReview">
+              <p class="reviewLabel" id="nombre"> <strong> ${doc.data().nombreCerveza} </strong> </p>
+              </div>
+              <div class="tagBeerReview">
+              <p class="reviewLabel" id="tipo"> <strong> ${doc.data().tipoCerveza}</strong> </p>
+              </div>
+              <div class="tagBeerReview">
+              <p class="reviewLabel" id="pais"> <strong> ${doc.data().paisCerveza}</strong> </p>
+              </div>
           </div>
           <div>
         </div>
@@ -192,12 +209,13 @@ db.collection("resenas").orderBy("fechaPublicacion", "desc").onSnapshot((querySn
         <div id="likeBtn">
           <a class="btnImageUnpload" id="like-${doc.id}"><i class="fas fa-beer"> ${doc.data().likes.length}</i>   
           </a>          
+
         </div>
       </div>
         <div id="comments">
           <textarea type='text' id="inputCommentsBeer" placeholder='Escribe un comentario' class='inputWeb review'></textarea>
           <br>
-          <button type="submit" class='btnWeb' id='btnComments'>¡comentar!</button>
+          <button type="submit" class='btnWebComments' id='btnComments'>¡comentar!</button>
         </div>  
     </section>    
     `
@@ -274,18 +292,10 @@ db.collection("resenas").orderBy("fechaPublicacion", "desc").onSnapshot((querySn
 })
 
 
-//SUBIR IMAGENES 
-
-/* document.getElementById("file-upload").change(() => {
-  if(this.file && this.files [0]){
-    let Archivo= new FileReader();
-    Archivo.onload= () => 
-  } 
-
-});*/
 
 
 
 return divcomuniBeer;
 
 };
+

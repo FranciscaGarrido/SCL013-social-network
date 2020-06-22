@@ -5,6 +5,10 @@ export const cerveceriasChilenas = () => {
     <div id="banner">
         <img class="logoBanner" src="./img/logo.png" alt="Logo SocialBeer">
     </div>
+    <div class="introTemplate">
+    <h6 class="introTemplateText"> Aquí encontraras solo cervecerías Chilenas que tienen página web para tu mayor seguridad, 
+    las hemos ordenado alfabeticamente para que te sea más fácil encontrarlas</h6>
+    </div>
     <div id="containerChileanBeer">
     <!-- sección cervezas -->
     <section class="webbeer">
@@ -563,7 +567,7 @@ export const cerveceriasChilenas = () => {
           <div class="webbeer-content-logo">
               <a href="http://www.toropaire.cl/historia.php#"> 
               <img class="img-fluid" src="./img/Logos cervezas/Logo_ToroPaire.jpg">
-              </a>logo-toska.jpeg
+              </a>
           </div>
            <div class="webbeer-content-logo">
               <a href="https://www.cervezatoska.com/"> 
