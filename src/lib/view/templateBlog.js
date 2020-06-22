@@ -35,7 +35,7 @@ export const blog = () => {
         <div class="article-info">
           <a href="#">
             <div>
-              <h2 class="article-title">La temperatura perfecta</h2>
+              <h2 class="article-title">La temperatura perfecta.</h2>
             </div>
             <p class="byline">Escrito por Katherine C.</p>
           </a>

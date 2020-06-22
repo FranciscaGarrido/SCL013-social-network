@@ -1,0 +1,36 @@
+[debug] [2020-06-22T03:41:09.321Z] ----------------------------------------------------------------------
+[debug] [2020-06-22T03:41:09.324Z] Command:       /usr/local/bin/firebase /Users/Kotits/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
+[debug] [2020-06-22T03:41:09.324Z] CLI Version:   8.4.0
+[debug] [2020-06-22T03:41:09.324Z] Platform:      darwin
+[debug] [2020-06-22T03:41:09.324Z] Node Version:  v12.16.1
+[debug] [2020-06-22T03:41:09.326Z] Time:          Sun Jun 21 2020 23:41:09 GMT-0400 (GMT-04:00)
+[debug] [2020-06-22T03:41:09.326Z] ----------------------------------------------------------------------
+[debug] [2020-06-22T03:41:09.326Z] 
+[debug] [2020-06-22T03:41:09.364Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-06-22T03:41:09.365Z] > authorizing via signed-in user
+[debug] [2020-06-22T03:41:09.366Z] [iam] checking project scl013-social-network for permissions ["firebase.projects.get","firebasedatabase.instances.update"]
+[debug] [2020-06-22T03:41:09.376Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/scl013-social-network:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasedatabase.instances.update"]}
+[debug] [2020-06-22T03:41:10.688Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 22 Jun 2020 03:41:10 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=931","alt-svc":"h3-28=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-06-22T03:41:10.691Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/scl013-social-network  
+ 
+[debug] [2020-06-22T03:41:11.888Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 22 Jun 2020 03:41:11 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-28=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'scl013-social-network'...
+[info] 
+[info] i  deploying database 
+[info] i  database: checking rules syntax... 
+[debug] [2020-06-22T03:41:11.929Z] >>> HTTP REQUEST PUT https://scl013-social-network.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null"
+  }
+}
+[debug] [2020-06-22T03:41:13.154Z] <<< HTTP RESPONSE 404 {"server":"nginx","date":"Mon, 22 Jun 2020 03:41:12 GMT","content-type":"application/json; charset=utf-8","content-length":"101","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[debug] [2020-06-22T03:41:13.155Z] <<< HTTP RESPONSE BODY {
+  "error" : "Firebase error. Please ensure that you spelled the name of your Firebase correctly"
+}
+
+[error] 
+[error] Error: Unexpected error while deploying database rules.

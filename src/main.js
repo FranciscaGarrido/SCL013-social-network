@@ -26,10 +26,10 @@ const init = () => {
       case '#identificacion':
         let div = document.getElementById("#identificacion");
         div.addEventListener('click',()=>{
-          alert("funciona");
+      
         })
-        document.getElementById("boton17").addEventListener("click",() => {window.location.hash = '#home'});
-        document.getElementById("boton18").addEventListener("click", () => {location.href="https://google.com"});
+        document.getElementById("boton17").addEventListener("click",() => {location.href="https://google.com"});
+        document.getElementById("boton18").addEventListener("click", () => {window.location.hash = '#home'} );
         break;
 
       case '#iniciarsesion':
